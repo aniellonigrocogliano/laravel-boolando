@@ -30,7 +30,26 @@
 
     <p class="card-text">{{ $product['brand'] }}</p>
     <h5 class="card-title">{{ $product['name'] }}</h5>
-    <p class="card-text"><span class="text-danger"> {{ $product['price'] }} <i class="fa-solid fa-euro-sign"></i></span>
+    <p class="card-text">
+        @foreach ($product['badges'] as $badge)
+            @if (collect($product['badges'])->contains('type', 'discount'))
+                @if ($badge['type'] === 'discount')
+                    @php
+                        $discount = str_replace('-', '', $badge['value']);
+                        $discount = str_replace('%', '', $discount);
+                        $discount = intval($discount);
+                        $discount = $product['price'] / (1 - $discount / 100);
+                        $discount = number_format($discount, 2);
+
+                    @endphp
+                    <span class="text-danger"> {{ $product['price'] }} <i class="fa-solid fa-euro-sign"></i></span>
+                    <span class="text-dark text-decoration-line-through"> {{ $discount }} <i
+                            class="fa-solid fa-euro-sign"></i></span>
+                @endif
+            @else
+                <span class="text-danger"> {{ $product['price'] }} <i class="fa-solid fa-euro-sign"></i></span>
+            @endif
+        @endforeach
     </p>
 </div>
 </div>
