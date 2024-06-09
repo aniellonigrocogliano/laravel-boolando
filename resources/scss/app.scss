@@ -76,18 +76,22 @@ footer {
 .tag {
     background-color: #1D8000;
     color: white;
-    height: 22px;
-    width: 100px;
     text-align: center;
+    font-size: 0.8rem;
+    height: auto;
+    width: auto;
+    padding: 5px;
 
 }
 
 .discount {
     background-color: #F80102;
+    padding: 5px;
     color: white;
-    height: 22px;
-    width: 45px;
+    height: auto;
+    width: auto;
     text-align: center;
+    font-size: 0.8rem;
 
 }
 
@@ -96,10 +100,11 @@ footer {
     top: 0px;
     right: 10px;
     background-color: white;
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
     text-align: center;
     padding-top: 6px;
+    font-size: 1.5rem;
 }
 
 .hred {
