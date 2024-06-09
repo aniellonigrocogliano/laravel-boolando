@@ -52,4 +52,14 @@ a:hover {
 footer {
     background-color: #1A1A1A;
     color: white;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #1D8000;
+    }
 }
