@@ -1,6 +1,10 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
+.image-container {
+    position: relative;
+}
+
 .normal-image {
     display: block;
 
@@ -62,4 +66,46 @@ footer {
         text-decoration: none;
         color: #1D8000;
     }
+}
+
+.badge {
+    position: absolute;
+    bottom: 100px;
+}
+
+.tag {
+    background-color: #1D8000;
+    color: white;
+    height: 22px;
+    width: 100px;
+    text-align: center;
+
+}
+
+.discount {
+    background-color: #F80102;
+    color: white;
+    height: 22px;
+    width: 45px;
+    text-align: center;
+
+}
+
+.heart {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.hred {
+    color: #F80102;
+}
+
+.hblack {
+    color: #000000;
 }
