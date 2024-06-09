@@ -1,1 +1,55 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+.normal-image {
+    display: block;
+
+}
+
+.hover-image {
+    display: none;
+}
+
+.image-container:hover .normal-image {
+    display: none;
+
+}
+
+.image-container:hover .hover-image {
+    display: block;
+
+}
+
+.header {
+    background-color: #F96900;
+    height: 55px;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.header img {
+    height: 35px;
+}
+
+* {
+
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(102, 0, 0);
+}
+
+footer {
+    background-color: #1A1A1A;
+    color: white;
+}
